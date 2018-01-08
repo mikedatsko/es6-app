@@ -64,7 +64,7 @@ gulp.task('build:js:dev', () => {
 });
 
 gulp.task('fonts', () => {
-  return gulp.src('../../vendors/bootstrap/fonts/**/*')
+  return gulp.src('./vendors/bootstrap/fonts/**/*')
     .pipe(gulp.dest(dist + '/fonts'))
 });
 
