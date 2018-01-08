@@ -11,10 +11,10 @@ const copy = require('gulp-copy');
 const sequence = require('run-sequence');
 
 const srcCSS = [
-  '../../assets/css/reset.css',
-  '../../vendors/bootstrap/css/bootstrap.css',
-  '../../vendors/bootstrap/css/bootstrap-theme.min.css',
-  '../../assets/css/style.css'
+  './assets/css/reset.css',
+  './vendors/bootstrap/css/bootstrap.css',
+  './vendors/bootstrap/css/bootstrap-theme.min.css',
+  './assets/css/style.css'
 ];
 const srcJS = [
   './src/services/**/*.js',

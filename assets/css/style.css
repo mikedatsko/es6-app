@@ -1,0 +1,114 @@
+
+img {
+  width: 100%;
+}
+
+
+
+.page {
+  margin: 0 auto;
+  padding: 10px;
+  display: block;
+}
+
+header {
+
+}
+
+header a img {
+  height: 100px;
+  width: auto;
+}
+
+aside {
+  width: 200px;
+  float: left;
+}
+
+.content {
+  margin-left: 200px;
+}
+
+.content h1 {
+  background-color: #f00;
+}
+
+.footer {
+  clear: both;
+}
+
+.page-frame {
+  display: block;
+  border: 2px solid #666;
+  padding: 10px 10px 60px;
+  border-radius: 10px;
+  height: 500px;
+  width: 320px;
+  margin: 10px auto 10px;
+  background: #999 url(../images/button-on.png) no-repeat 50% 443px;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.5);
+}
+
+#menu li a {
+  position: relative;
+}
+
+#menu li a .badge {
+  position: absolute;
+  width: 100%;
+  left: -3px;
+  bottom: -12px;
+  border-radius: 3px;
+  font-size: 10px;
+  letter-spacing: 1px;
+  font-weight: normal;
+  background: #ccc;
+}
+
+#menu li.active a .badge {
+  background: #1e5f96;
+  color: #fff;
+}
+
+@media (max-width: 640px) {
+
+  #menu {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 1;
+    background: #fff;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.5);
+    border-radius: 5px;
+  }
+
+  #menu:hover li {
+    display: block;
+  }
+
+  #menu li {
+    float: none;
+    display: none;
+    min-height: 60px;
+    margin: 0 1px;
+  }
+
+  #menu:before {
+    content: '☰';
+    font-size: 30px;
+    text-align: center;
+    width: 100px;
+    background: #eee;
+    border-radius: 5px;
+  }
+}
+
+/* TODO */
+
+#todo_add {
+  margin: 10px 0;
+}
+
+.checked {
+  text-decoration: line-through;
+}
