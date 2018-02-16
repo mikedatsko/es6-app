@@ -1,7 +1,7 @@
 
 class App {
   constructor() {
-    window.parent.postMessage('FRAME_LOADED','https://jsmeasure.herokuapp.com');
+    window.parent.postMessage('FRAME_LOADED', (new URL(document.location)).searchParams.get('host_url') || 'http://jsmeasure.surge.sh');
     // var todos = data.read('todos');
     const todos = [];
 
